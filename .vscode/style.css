@@ -1,0 +1,111 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body{
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    color: #333333;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+
+}
+
+/* Headings */
+h1{
+    color: #d63384;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    color: #ff69b4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Navigation Links */
+a{
+    text-decoration: none;
+    color: white;
+    background-color: #d63384;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: #ff69b4;
+}
+
+/* Paragraphs */
+p{
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Images */
+img{
+    width: 300px;
+    height:auto ;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Lists */
+ul{
+    margin-left: 20px;
+}
+
+/* Form */
+form{
+    margin-top: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    background-color: #d63384;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #ff69b4;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        padding: 10px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    a{
+        display: block;
+        margin:5px 0;
+        text-align: center;
+    }
+    
+}
