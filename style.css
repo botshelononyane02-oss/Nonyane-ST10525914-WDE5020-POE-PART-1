@@ -10,8 +10,8 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #3d2b1f;
+    background-color: #fff8f0;
     padding: 1rem;
 }
 /* Typography */
@@ -28,7 +28,7 @@ p{
 
 /* Layout - Flexbox for nav */
 header {
-    background-color: #222;
+    background-color: #5c3d2e;
     color: white;
     padding: 1rem;
 }
@@ -47,7 +47,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: #ffdab9;
     text-decoration: none;
 }
 
@@ -77,23 +77,23 @@ nav a {
 }
 
 button {
-    background-color: #333;
-    color: white;
+    background-color: #f4a261;
+    color: #5c3d2e;
     padding: 10px 15px;
     border: none;
 }
 
 /* Hover, Focus, Active */
 nav a:hover {
-    color: yellow;
+    color: white;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #e76f51;
 }
 
 button:active {
-    background-color: black;
+    background-color: #9c4a3c;
 }
 
 input:focus, textarea:focus {
@@ -102,8 +102,8 @@ input:focus, textarea:focus {
 }
 
 footer {
-    background-color: #222;
-    color: white;
+    background-color: #f4a261;
+    color: #ffdab9;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
