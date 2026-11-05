@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Products - Lihle Cakes & Kids Decor</title>
+        <meta name ="description" content ="We sell affordable cakes and kids decor in Mabopane. Order online for birthdays,wedddings,events etc.">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -19,33 +20,39 @@
                 </ul>
                 </nav>
         </header>
-        
+        <main class="container">
         <h2 style="text-align: center; margin-top: 20px;">Our Products</h2>
-
+        <input type="text" id="search" placeholder="Search cakes...">
         <div class="products-grid" style="width: 90%; margin:20px auto">
             <div class="products-card">
-                <img src="images/product1.jpg" alt="Birtday Cake">
+                <img src="images/product1.jpg" alt="Birtday Cake" class="product-img">
                 <h3>Birthday Cakes</h3>
                 <p>Price: R350</p>
                 </div>
                 <div class="products-card">
-                <img src="images/product2.jpg" alt="BabyShower Cake">
-                <h3>Birthday Cakes</h3>
+                <img src="images/product2.jpg" alt="BabyShower Cake" class="product-img">
+                <h3>BabyShower Cakes</h3>
                 <p>Price: R700</p>
                 </div>
                 <div class="products-card">
-                <img src="images/products3.jpg" alt="Custom Cake">
-                <h3>Birthday Cakes</h3>
+                <img src="images/products3.jpg" alt="Custom Cake" class="product-img">
+                <h3>Custom Cakes</h3>
                 <p>Price: R500</p>
                 </div>
                 <div class="products-card">
-                <img src="images/product4.jpg" alt="Kids Decor">
-                <h3>Birthday Cakes</h3>
+                <img src="images/product4.jpg" alt="Kids Decor" class="product-img">
+                <h3>Kids Decor</h3>
                 <p>Price: R2000</p>
             </div>
-        </div>
+            </div>
+        </main>
                
         <footer><p>Copyright 2026 Lihle Cakes</p></footer>
+        <div id="lightbox" class="lightbox">
+            <span id="close-lightbox">&times;</span>
+            <img id="lightbox-img"
+            class="lightbox-img" src="" alt="Large cake view">
+        </div>
+        <script src="js/script.js"></script>
     </body>
 </html>
-    
