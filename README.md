@@ -23,6 +23,23 @@ Lihle Cakes & Kids Decor is a website for a small business in Mabopane that sell
 Email: lihlecakes@gmail.com
 Phone: 071 234 5678
 Location: Mabopane Extension X, Pretoria Gauteng
+# Changes in Part 3
+##Features
+- Responsive navigation with hamburger menu for mobile
+- SEO meta tags on every page(title, description, keywords, author)
+- FAQ according on Home page 
+- Product search and filter by category (ll, Cakes, Decor)
+- Lightbox - click any product image to view it bigger
+- Google Maps embed for Mabopane,Pretria
+- External CSS and Javascript
 
+# Folder Structure
+- index.html, aboutus.html, products.html, enquiry.html, contactus.html
+- style.css - All styling
+- js/script.js - Al Javascript(hamburger, according, lightbox, search, form)
+- images/ - All website images
+
+#
+- Part 1: Build 5 pages, CSS styling, Javascript features, SEO and responsive design
 
 

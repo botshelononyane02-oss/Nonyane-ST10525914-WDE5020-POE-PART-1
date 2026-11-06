@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,8 @@
     <body>
         <header>
             <h1>Lihle Cakes & Kids Decor</h1>
-            <nav>
+            <button id="menu-btn">MENU</button>
+            <nav id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
@@ -22,37 +23,75 @@
         </header>
         <main class="container">
         <h2 style="text-align: center; margin-top: 20px;">Our Products</h2>
+        <p>Click any image to view it bigger.Search or filter to find what you need for your celebration in Mabopane</p>
         <input type="text" id="search" placeholder="Search cakes...">
+        <div style="margin: 10px 0;">
+            <button
+            onclick="filterProducts('all')">All</button>
+            <button
+            onclick="filterProducts('cake')">Cakes</button>
+            <button
+            onclick="filterProducts('decor')">Decor</button>
+        </div>
         <div class="products-grid" style="width: 90%; margin:20px auto">
-            <div class="products-card">
+            <div class="products-card" data-category="cake">
                 <img src="images/product1.jpg" alt="Birtday Cake" class="product-img">
                 <h3>Birthday Cakes</h3>
                 <p>Price: R350</p>
+                <button
+                    onclick="window.location.href='enquiry.html'">Enquire</button>
                 </div>
-                <div class="products-card">
+                <div class="products-card" data-category="cake">
                 <img src="images/product2.jpg" alt="BabyShower Cake" class="product-img">
                 <h3>BabyShower Cakes</h3>
                 <p>Price: R700</p>
+                <button
+                    onclick="window.location.href='enquiry.html'">Enquire</button>
                 </div>
-                <div class="products-card">
+                <div class="products-card"data-category="cake">
                 <img src="images/products3.jpg" alt="Custom Cake" class="product-img">
                 <h3>Custom Cakes</h3>
                 <p>Price: R500</p>
+                <button
+                    onclick="window.location.href='enquiry'">Enquire</button>
                 </div>
-                <div class="products-card">
+                <div class="products-card"data-category="decor">
                 <img src="images/product4.jpg" alt="Kids Decor" class="product-img">
                 <h3>Kids Decor</h3>
                 <p>Price: R2000</p>
+                <button
+                    onclick="window.location.href='enquiry'">Enquire</button>
             </div>
             </div>
+            <p><a href="enquiry.html">Can't find whta you want? Enquire for a custom order & gt;</a></p>
         </main>
-               
         <footer><p>Copyright 2026 Lihle Cakes</p></footer>
+        <a href="index.html">Home</a> | 
+            <a href="products.html">Products</a> |
+            <a href="enquiry.html">Enquiry</a></p>
+        </footer>
+
+        <script src="js/script.js"></script>
         <div id="lightbox" class="lightbox">
             <span id="close-lightbox">&times;</span>
             <img id="lightbox-img"
             class="lightbox-img" src="" alt="Large cake view">
         </div>
-        <script src="js/script.js"></script>
+
+        <script>
+        function filterProducts(category) {
+            const cards =
+            document.querySelectorAll('.products-card');
+            cards.forEach(function(card) {
+                if (category === 'all' ||
+                card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    </script>
     </body>
 </html>

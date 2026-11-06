@@ -204,5 +204,26 @@ inputt:focus, textarea:focus { border: 2px solid #ff69b4; outline: none; }
     border: 2px solid #ff69b4;
     border-radius: 8px; 
     font-size: 16px;                                                                                                                 
-}                                                                                                                                                                                                                            
+}
+/* Hamburger */
+#menu-btn {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    #menu-nav {
+        display: none;
+        width: 100%
+    }
+    #main-nav.show {
+        display: block;
+    }
+    #main-nav ul {
+        flex-direction: column;
+    }
+}
 
